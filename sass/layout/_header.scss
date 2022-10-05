@@ -2,7 +2,7 @@
   border-bottom: 1px solid var(--extra-border-color);
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   height: 80px;
@@ -13,14 +13,12 @@
   align-items: center;
   column-gap: 90px;
 }
-.page-nav-list {
+.page-nav__list {
   display: flex;
   column-gap: 50px;
   padding-top: 32px;
 }
-.contact-list {
-  display: flex;
-}
+
 .contact-mail {
   margin-left: auto;
   margin-right: 50px;
@@ -40,7 +38,8 @@
   color: var(--logo-color);
   text-decoration: none;
 }
-.web {
+
+.logo__first-part {
   color: var(--accent-color);
   width: 145px;
   height: 31px;
@@ -53,21 +52,52 @@
   font-size: 26px;
   line-height: 31px;
 }
-.link-current::after {
+
+.page-nav__link {
   display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  margin-top: 28px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--primaru-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
 }
 
-.portfolio-nav-link,
-.studio-nav-link {
+.page-nav__link_current {
   color: var(--accent-color);
+
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    margin-top: 28px;
+  }
 }
-.header-icon {
+.header__communication {
+  display: flex;
+  margin-left: auto;
+  column-gap: 50px;
+}
+.header__icon {
   display: block;
   position: absolute;
   left: -28px;
@@ -81,19 +111,15 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .header__contact:hover &,
+  .header__contact:focus & {
+    fill: var(--accent-color);
+  }
 }
 
-.contact-mail:hover .header-icon,
-.contact-mail:focus .header-icon {
-  fill: var(--accent-color);
-}
-
-.contact-tel:hover .header-icon,
-.contact-tel:focus .header-icon {
-  fill: var(--accent-color);
-}
-
-.contact-mail {
+.header__contact {
+  position: relative;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
@@ -101,36 +127,18 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+
   text-decoration: none;
+  margin-left: 0 auto;
   margin-top: 32px;
   margin-bottom: 32px;
-  position: relative;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-tel {
-  position: relative;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  color: var(--additional-text-color);
-  text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-mail:hover,
-.contact-mail:focus {
-  color: var(--accent-color);
-}
-.contact-tel:hover,
-.contact-tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

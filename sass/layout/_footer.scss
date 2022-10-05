@@ -1,17 +1,17 @@
 .footer {
   background-color: var(--main-background-color);
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-address-list {
+.footer-address__list {
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer__logo {
   width: 145px;
   height: 31px;
   left: 215px;
@@ -25,8 +25,8 @@
   text-decoration: none;
 }
 
-.footer-link,
-.footer-address {
+.footer__link,
+.footer-address__link {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
@@ -35,20 +35,20 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.address {
+.footer-address {
   padding-top: 20px;
 }
-.footer-link {
+.footer__link {
   color: var(--address-text-color);
 }
-.footer-address {
+.footer-address__link {
   color: var(--accent-text-color);
 }
-.footer-social {
+.footer-icon {
   width: 206px;
   height: 80px;
 }
-.footer-icon-title {
+.footer-icon__title {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
@@ -60,7 +60,7 @@
   color: var(--accent-text-color);
 }
 
-.footer-list-icon {
+.footer-icon__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@
   padding-top: 16px;
 }
 
-.footer-icon-link {
+.footer-icon__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,9 +83,14 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.footer-icon {
+.footer-icon__svg {
   width: 20px;
   height: 20px;
   fill: var(--accent-text-color);
@@ -93,14 +98,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-icon-link:hover .footer-icon,
-.footer-icon-link:focus .footer-icon {
-  fill: var(--accent-text-color);
+  .footer-icon__link:hover &,
+  .footer-icon__link:focus & {
+    fill: var(--accent-text-color);
+  }
 }

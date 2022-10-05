@@ -1,4 +1,4 @@
-.hero-container {
+.hero__container {
   display: block;
   align-items: center;
   padding-bottom: 200px;
@@ -16,7 +16,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 900;
@@ -34,7 +34,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.hero-btn {
+.hero__btn {
   font-family: var(--primary-font);
   font-weight: 700;
   font-style: normal;
@@ -56,10 +56,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--accent-text-color);
-  background-color: var(--btn-bg-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    background-color: var(--btn-bg-color);
+  }
 }

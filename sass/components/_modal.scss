@@ -1,4 +1,4 @@
-.modal {
+.modal-close {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9,7 +9,7 @@
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal-close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -28,18 +28,19 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
-.modal-close-btn-icon {
+.modal-close__icon {
   width: 11px;
   height: 11px;
 }
-.modal-caption {
+.modal-close__caption {
   font-family: var(--primary-font);
   font-weight: 700;
   text-align: center;

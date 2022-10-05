@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -9,7 +9,7 @@
   color: var(--primary-text-color);
   padding-top: 69px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   padding-bottom: 94px;
   padding-top: 50px;
 }
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -31,9 +31,16 @@
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
 }
 
-.clients-icon {
+.clients__icon {
   fill: #afb1b8;
   height: 92px;
   padding: 16px 32px;
@@ -41,16 +48,9 @@
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-item:hover,
-.clients-item:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-  cursor: pointer;
-}
-
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
-  fill: var(--accent-color);
+  .clients__item:hover &,
+  .clients__item:focus & {
+    fill: var(--accent-color);
+  }
 }

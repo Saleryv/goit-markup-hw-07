@@ -6,7 +6,7 @@
   height: 86px;
 }
 
-.footer-field-desk {
+.footer-form__desk {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
@@ -17,15 +17,16 @@
   color: var(--accent-text-color);
 }
 
-.footer-input-wrapper {
+.footer-form__wrapper {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-form-input {
+.footer-form__input {
   height: 50px;
   width: 358px;
   margin-right: 12px;
+  padding-left: 15px;
   background-color: var(--main-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -33,7 +34,7 @@
   color: var(--accent-text-color);
 }
 
-.footer-form-btn {
+.footer-form__btn {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -52,15 +53,15 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-  background-color: #188ce8;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.footer-form-icon {
+.footer-form__icon {
   width: 24px;
   height: 24px;
   fill: var(--accent-text-color);

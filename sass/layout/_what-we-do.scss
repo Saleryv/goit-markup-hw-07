@@ -1,13 +1,13 @@
-.what-we-do {
+.our-case {
   margin-top: 0;
   padding-top: 47px;
 }
 
-.what-container {
+.our-case__container {
   display: block;
 }
 
-.what-title {
+.our-case__title {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
@@ -19,17 +19,17 @@
   margin-bottom: 50px;
 }
 
-.what-list {
+.our-case__list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
 }
 
-.what-thumb {
+.our-case__thumb {
   position: relative;
   overflow: hidden;
 }
-.what-overlay {
+.our-case__overlay {
   position: absolute;
   height: 25%;
   width: 100%;
@@ -37,7 +37,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.what-overlay-text {
+.our-case__text {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
