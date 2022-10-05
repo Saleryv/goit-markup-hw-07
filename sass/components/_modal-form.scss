@@ -1,7 +1,6 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
 }
 .modal-form-field-desc {
   display: block;
@@ -13,6 +12,7 @@
   letter-spacing: 0.01em;
   color: var(--additional-text-color);
   margin-bottom: 4px;
+  margin-top: 12px;
 }
 
 .modal-form-input-wrapper {

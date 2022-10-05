@@ -35,12 +35,14 @@
 
 .clients-icon {
   fill: #afb1b8;
+  height: 92px;
   padding: 16px 32px;
 
-  transition-property: color, background-color;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
