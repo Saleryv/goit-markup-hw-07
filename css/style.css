@@ -1,10 +1,10 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
-:root {
+/* :root {
   --primary-text-color: #212121;
   --logo-color: #000000;
   --accent-color: #2196f3;
@@ -17,9 +17,9 @@
   --extra-border-color: #ececec;
   --main-background-color: #2f303a;
   --btn-bg-color: #188ce8;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -30,9 +30,9 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -65,32 +65,33 @@ button {
   font-family: var(--primary-font);
   color: var(--primaru-text-color);
   text-decoration: none;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 90px;
   padding-bottom: 90px;
-}
+} */
 
 /* =========================== HEADER ========================== */
 
-.header {
+/* .header {
   border-bottom: 1px solid var(--extra-border-color);
 }
+
 .header-container {
   display: flex;
   align-items: center;
   height: 80px;
-  /* !!!!!!!!!  Костиль 91, 103, 178 !!!!!!!!!!*/
 }
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -100,8 +101,6 @@ button {
   display: flex;
   column-gap: 50px;
   padding-top: 32px;
-  /* padding-bottom: 32px;
- */
 }
 .contact-list {
   display: flex;
@@ -137,9 +136,9 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-}
+} */
 
-.list {
+/* .list {
   list-style: none;
 }
 
@@ -167,9 +166,9 @@ button {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
+} */
 
-.link-current::after {
+/* .link-current::after {
   display: block;
   content: "";
   width: 100%;
@@ -249,10 +248,10 @@ button {
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--accent-color);
-}
+} */
 /* ===============/ HEADER /==================== */
 /* =========================== HERO ======================= */
-.hero-container {
+/* .hero-container {
   display: block;
   align-items: center;
   padding-bottom: 200px;
@@ -316,10 +315,10 @@ button {
 .hero-btn:focus {
   color: var(--accent-text-color);
   background-color: var(--btn-bg-color);
-}
+} */
 
 /* ================================ features ========================= */
-.features {
+/* .features {
   margin-bottom: 0;
   padding-bottom: 47px;
 }
@@ -385,9 +384,9 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--additional-text-color);
-}
+} */
 /* ======================================= what-we-do ================================ */
-.what-we-do {
+/* .what-we-do {
   margin-top: 0;
   padding-top: 47px;
 }
@@ -438,10 +437,10 @@ button {
   color: var(--accent-text-color);
   padding-top: 27px;
   padding-bottom: 27px;
-}
+} */
 /* =========================== OUR TEAM ====================== */
 
-.team {
+/* .team {
   margin-bottom: 0;
   background-color: var(--background-btn-color);
 }
@@ -475,7 +474,7 @@ button {
 }
 /* .team-photo {
   margin-bottom: 50px; */
-.team-text {
+/* .team-text {
   padding-top: 50px;
 }
 
@@ -542,9 +541,10 @@ button {
 .social-list-item-link:hover .team-social-icon,
 .social-list-item-link:focus .team-social-icon {
   fill: var(--accent-text-color);
-}
+} */
+
 /* ======================== CLIENTS ======================== */
-.clients-title {
+/* .clients-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -597,9 +597,9 @@ button {
 .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
   fill: var(--accent-color);
-}
+} */
 /* ================  PORTFOLIO MAIN ====================== */
-.menu-list {
+/* .menu-list {
   display: flex;
   list-style: none;
   column-gap: 8px;
@@ -708,10 +708,10 @@ button {
   color: var(--additional-text-color);
   padding-bottom: 20px;
   padding-left: 24px;
-}
+} */
 
 /* ============ FOOTER ================= */
-.footer {
+/* .footer {
   background-color: var(--main-background-color);
 }
 .footer-container {
@@ -816,9 +816,9 @@ button {
 .footer-icon-link:hover .footer-icon,
 .footer-icon-link:focus .footer-icon {
   fill: var(--accent-text-color);
-}
+} */
 /* ===================== FOOTER FORM ================= */
-.footer-form {
+/* .footer-form {
   margin-left: 93px;
   position: relative;
 
@@ -885,13 +885,13 @@ button {
   height: 24px;
   fill: var(--accent-text-color);
   margin-left: 10px;
-}
+} */
 
 /* ===================== //FOOTER FORM ================= */
 /* ============ //FOOTER ================= */
 
 /* ============ BACKDROP  ================= */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -907,11 +907,11 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 /* ============ / BACKDROP  ================= */
 
 /* ============ MODAL ================= */
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -957,11 +957,11 @@ button {
   font-weight: 700;
   text-align: center;
   font-size: 20px;
-}
+} */
 /* ============ / MODAL ================= */
 
 /* ============ MODAL FORM  ================= */
-.modal-form {
+/* .modal-form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -1120,6 +1120,6 @@ button {
 .modal-form-btn:focus {
   background-color: #188ce8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+} */
 
 /* ============ / MODAL FORM  ================= */

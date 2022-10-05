@@ -1,0 +1,102 @@
+.team {
+  margin-bottom: 0;
+  background-color: var(--background-btn-color);
+}
+
+.team-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primaru-text-color);
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 30px;
+  padding-bottom: 90px;
+}
+.team-card {
+  padding-bottom: 30px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* .team-photo {
+  margin-bottom: 50px; */
+.team-text {
+  padding-top: 50px;
+}
+
+.team-item-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primaru-text-color);
+  margin-bottom: 10px;
+}
+.team-title-description {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--additional-text-color);
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
+  padding-top: 16px;
+  column-gap: 10px;
+}
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-item-link:hover .team-social-icon,
+.social-list-item-link:focus .team-social-icon {
+  fill: var(--accent-text-color);
+}
