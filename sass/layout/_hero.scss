@@ -19,13 +19,10 @@
 .hero__title {
   font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(44px, 900, 60px);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-text-color);
-
   display: flex;
   text-align: center;
   padding-top: 200px;
@@ -34,6 +31,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero__btn {
   font-family: var(--primary-font);
   font-weight: 700;
