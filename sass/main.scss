@@ -1,5 +1,6 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 @import "./base/base";
 
@@ -14,7 +15,7 @@
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/features";
-@import "./layout/what-we-do";
+@import "./layout/our-case";
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/portfolio";
